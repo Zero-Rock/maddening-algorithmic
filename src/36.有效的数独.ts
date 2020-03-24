@@ -2,11 +2,8 @@
  * Created by Mobius on 2020/3/24 21:38.
  * https://leetcode-cn.com/problems/valid-sudoku/
  */
-enum Num {
-  one=1,
-  three=3,
-  nine=9
-}
+import { Num } from './common/enum';
+
 const isValidSudoku = ( board: string[][] ): boolean => {
   const row: number[] = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
   const col: number[] = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ];

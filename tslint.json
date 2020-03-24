@@ -27,6 +27,7 @@
     "no-var-keyword": [true],
     "no-var-requires": [false],
     "object-curly-spacing": [true],
+    "prefer-for-of": [false],
     "quotemark": [true, "single", "jsx-double"],
     "radix": [true],
     "semicolon": [true, "always"]
