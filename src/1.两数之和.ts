@@ -5,7 +5,7 @@ interface Temp {
   [ key: number ]: number;
 }
 
-const twoSum = ( nums: number[], target: number ) => {
+const twoSum = (nums: number[], target: number) => {
   const temp: Temp = {};
   for (let i = 0; i < nums.length; i ++) {
     const tag = target - nums[ i ];
@@ -15,4 +15,4 @@ const twoSum = ( nums: number[], target: number ) => {
     temp[ nums[ i ] ] = i;
   }
 };
-console.log( twoSum( [ 1, 0, 1 ], 2 ) );
+console.log(twoSum([ 1, 0, 1 ], 2));

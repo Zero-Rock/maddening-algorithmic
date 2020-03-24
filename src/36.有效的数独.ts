@@ -4,7 +4,7 @@
  */
 import { Num } from './common/enum';
 
-const isValidSudoku = ( board: string[][] ): boolean => {
+const isValidSudoku = (board: string[][]): boolean => {
   const row: number[] = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
   const col: number[] = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
   const sqre: number[] = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
@@ -13,7 +13,7 @@ const isValidSudoku = ( board: string[][] ): boolean => {
       if (board[ rIndex ][ cIndex ] === '.') {
         continue;
       }
-      const ele: number = Number( board[ rIndex ][ cIndex ] );
+      const ele: number = Number(board[ rIndex ][ cIndex ]);
       const sIndex: number = (rIndex - rIndex % Num.three) / Num.three * Num.three + (cIndex - cIndex % Num.three) / Num.three;
       if ((row[ rIndex ] >> ele & 1) || (col[ cIndex ] >> ele & 1) || (sqre[ sIndex ] >> ele & 1)) {
         return false;
