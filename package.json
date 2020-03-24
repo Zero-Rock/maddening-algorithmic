@@ -2,12 +2,17 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "",
-  "main": "1.两数之和.js",
+  "main": "index.js",
   "scripts": {
     "lint:ts": "tslint -c tslint.json 'src/**/*.ts'",
-    "lint:fixts": "tslint -c tslint.json 'src/**/*.ts' --fix"
+    "lint:fixts": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "build": "tsc"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kivamobius/code_snippet.git"
+  },
+  "author": "含光",
   "license": "ISC",
   "devDependencies": {
     "tslint": "^6.1.0",
