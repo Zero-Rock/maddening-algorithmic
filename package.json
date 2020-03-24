@@ -1,0 +1,17 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.两数之和.js",
+  "scripts": {
+    "lint:ts": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint:fixts": "tslint -c tslint.json 'src/**/*.ts' --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^6.1.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.8.3"
+  }
+}
