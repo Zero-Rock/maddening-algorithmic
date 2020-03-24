@@ -28,5 +28,5 @@ const lengthOfLongestSubstring = ( str: string ): number => {
   return result.len;
 };
 
-const len: number = lengthOfLongestSubstring('pwwkew');
-console.log(len);
+const len: number = lengthOfLongestSubstring( 'pwwkew' );
+console.log( len );

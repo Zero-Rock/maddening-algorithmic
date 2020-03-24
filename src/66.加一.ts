@@ -4,7 +4,7 @@
  */
 import { Num } from './common/enum';
 
-const plusOne =  ( digits: number[] ):number[]=> {
+const plusOne = ( digits: number[] ): number[] => {
   const digitsLen: number = digits.length;
   digits[ digitsLen - 1 ] ++;
   for (let i = digitsLen - 1; i >= 0; i --) {
@@ -15,7 +15,7 @@ const plusOne =  ( digits: number[] ):number[]=> {
       } else {
         digits[ i - 1 ] ++;
       }
-    }else{
+    } else {
       break;
     }
   }

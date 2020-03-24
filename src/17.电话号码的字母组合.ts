@@ -5,9 +5,10 @@
 import { Num } from './common/enum';
 
 interface StrMap {
-  [key:number]: string[];
+  [ key: number ]: string[];
 }
-const letterCombinations = (digits:string): string[] => {
+
+const letterCombinations = ( digits: string ): string[] => {
   const str = String( digits );
   const strMap: StrMap = {
     2: [ 'a', 'b', 'c' ],
@@ -20,9 +21,9 @@ const letterCombinations = (digits:string): string[] => {
     9: [ 'w', 'x', 'y', 'z' ],
     0: [ '_' ]
   };
-  let list:string[] = [];
+  let list: string[] = [];
   for (let i = 0; i < str.length; i ++) {
-    const num:number = parseInt(str[ i ], Num.ten);
+    const num: number = parseInt( str[ i ], Num.ten );
     if (num === 1) {
       continue;
     }

@@ -6,6 +6,7 @@
   ],
   "jsRules": {},
   "rules": {
+    "array-type":[true,"array"],
     "arrow-parens": [true],
     "curly": true,
     "comment-format": [true, "check-space"],
@@ -30,7 +31,8 @@
     "prefer-for-of": [false],
     "quotemark": [true, "single", "jsx-double"],
     "radix": [true],
-    "semicolon": [true, "always"]
+    "semicolon": [true, "always"],
+    "typedef-whitespace": [true]
   },
   "rulesDirectory": []
 }
