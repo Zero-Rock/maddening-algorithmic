@@ -6,6 +6,7 @@
   "scripts": {
     "lint:ts": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:fixts": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "commit": "git add . && git-cz",
     "build": "tsc"
   },
   "repository": {
@@ -15,8 +16,14 @@
   "author": "含光",
   "license": "ISC",
   "devDependencies": {
+    "cz-conventional-changelog": "^3.2.0",
     "tslint": "^6.1.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
