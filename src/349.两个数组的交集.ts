@@ -1,6 +1,6 @@
 /**
  * Created by 含光<mobius_pan@yeah.net> on 2020/7/10 8:44 下午.
- * https://leetcode-cn.com/problems/intersection-of-two-arrays/
+ * @see https://leetcode-cn.com/problems/intersection-of-two-arrays/
  */
 const intersection = (num1: number[], num2: number[]) => {
   const map: Map<number, boolean> = new Map();

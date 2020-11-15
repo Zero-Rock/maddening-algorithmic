@@ -1,6 +1,6 @@
 /**
  * Created by Mobius on 2020/3/24 22:42.
- * https://leetcode-cn.com/problems/container-with-most-water/
+ * @see https://leetcode-cn.com/problems/container-with-most-water/
  */
 const maxArea = (height: number[]): number => {
   let max: number = 0;

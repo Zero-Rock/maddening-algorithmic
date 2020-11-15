@@ -1,6 +1,6 @@
 /**
  * Created by Mobius on 2020/3/24 21:24.
- * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
+ * @see https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
  */
 interface Result {
   len: number;
@@ -28,5 +28,5 @@ const lengthOfLongestSubstring = (str: string): number => {
   return result.len;
 };
 
-const len: number = lengthOfLongestSubstring('pwwkew');
+const len: number = lengthOfLongestSubstring('powwow');
 console.log(len);

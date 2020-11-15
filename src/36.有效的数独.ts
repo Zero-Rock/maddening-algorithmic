@@ -1,6 +1,6 @@
 /**
  * Created by Mobius on 2020/3/24 21:38.
- * https://leetcode-cn.com/problems/valid-sudoku/
+ * @see https://leetcode-cn.com/problems/valid-sudoku/
  */
 import { Num } from './common/enum';
 

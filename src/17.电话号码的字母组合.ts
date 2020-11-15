@@ -1,6 +1,6 @@
 /**
  * Created by Mobius on 2020/3/24 22:31.
- * https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
+ * @see https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/
  */
 import { Num } from './common/enum';
 

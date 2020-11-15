@@ -1,6 +1,6 @@
 /**
  * Created by Mobius on 2020/3/24 21:32.
- * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
+ * @see https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
  */
 const maxProfit = (prices: number[]): number => {
   let MIN: number = Number.MAX_SAFE_INTEGER;

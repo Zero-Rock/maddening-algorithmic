@@ -1,9 +1,8 @@
+import { Num } from './common/enum';
 /**
  * Created by 含光<mobius_pan@yeah.net> on 2020/10/24 3:30 下午.
- * https://leetcode-cn.com/problems/reverse-integer/
+ * @see https://leetcode-cn.com/problems/reverse-integer/
  */
-import { Num } from './common/enum';
-
 const reverse = (num: number): number => {
   let result = 0;
   let temp = num;
