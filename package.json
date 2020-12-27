@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:kivamobius/code_snippet.git"
+    "url": "git@github.com:Zero-Rock/LeetCode.git"
   },
-  "author": "含光",
+  "author": "Zero",
   "license": "ISC",
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
