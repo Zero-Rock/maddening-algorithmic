@@ -1,5 +1,5 @@
 /**
- * Created by 含光<mobius_pan@yeah.net> on 2020/7/10 8:44 下午.
+ * Created by Zero<mobius_pan@yeah.net> on 2020/7/10 8:44 下午.
  * @see https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/
  */
 const intersect = (nums1: number[], nums2: number[]) => {

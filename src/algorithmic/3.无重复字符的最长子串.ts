@@ -1,5 +1,5 @@
 /**
- * Created by Mobius on 2020/3/24 21:24.
+ * Created by Zero on 2020/3/24 21:24.
  * @see https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
  */
 interface Result {
