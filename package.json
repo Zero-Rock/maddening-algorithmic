@@ -8,6 +8,7 @@
     "lint:fixts": "tslint -c tslint.json 'src/**/*.ts' --fix",
     "prettier": "prettier -c --write ./src",
     "commit": "git add . && git-cz",
+    "precommit": "lint-staged",
     "build": "rm -rf ./dist && tsc"
   },
   "repository": {
