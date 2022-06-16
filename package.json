@@ -9,6 +9,7 @@
     "prettier": "prettier -c --write ./src",
     "commit": "git add . && git-cz",
     "build": "rm -rf ./dist && tsc",
+    "precommit": "lint-staged",
     "execute": "ts-node"
   },
   "repository": {
