@@ -1,6 +1,6 @@
 /**
  * Created by Zero<mobius_pan@yeah.net> on 2022/6/16 23:02.
- * @https://leetcode.cn/problems/add-two-numbers/
+ * @see https://leetcode.cn/problems/add-two-numbers/
  */
 
 class ListNode {
