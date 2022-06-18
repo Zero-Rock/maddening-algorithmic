@@ -16,4 +16,5 @@ const longestPalindrome = (str: string): string => {
   }
   return res;
 };
+
 console.log(longestPalindrome('aasdfghahg'));
