@@ -33,7 +33,7 @@
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.1",
+    "lint-staged": "^13.0.2",
     "prettier": "^2.6.2",
     "ts-lint": "^4.5.1",
     "ts-node": "^10.8.1"
