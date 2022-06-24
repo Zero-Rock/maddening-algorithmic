@@ -2,6 +2,7 @@
  * Created by Zero on 2020/3/24 22:24.
  */
 export enum Num {
+  zero = 0,
   one = 1,
   two = 2,
   three = 3,

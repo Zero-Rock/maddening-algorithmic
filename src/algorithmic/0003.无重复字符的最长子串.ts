@@ -2,14 +2,14 @@
  * Created by Zero on 2020/3/24 21:24.
  * @see https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
  */
-interface Result {
+interface IResult {
   len: number;
   str: string;
 }
 
 const lengthOfLongestSubstring = (str: string): number => {
   const arr: string[] = [];
-  const result: Result = {
+  const result: IResult = {
     len: 0,
     str: '',
   };

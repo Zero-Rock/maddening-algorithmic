@@ -4,13 +4,13 @@
  */
 import { Num } from './common/enum';
 
-interface StrMap {
+interface IStrMap {
   [key: number]: string[];
 }
 
 const letterCombinations = (digits: string): string[] => {
   const str = String(digits);
-  const strMap: StrMap = {
+  const strMap: IStrMap = {
     2: ['a', 'b', 'c'],
     3: ['d', 'e', 'f'],
     4: ['g', 'h', 'i'],

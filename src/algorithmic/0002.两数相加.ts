@@ -2,14 +2,15 @@
  * Created by Zero<mobius_pan@yeah.net> on 2022/6/16 23:02.
  * @see https://leetcode.cn/problems/add-two-numbers/
  */
+import { Num } from './common/enum';
 
 class ListNode {
-  val: number
-  next: ListNode | null
+  public val: number | null;
+  public next: ListNode | null;
 
   constructor(val?: number | null, next?: ListNode | null) {
-    this.val = (val == undefined ? 0 : val)
-    this.next = (next === undefined ? null : next)
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
   }
 }
 
@@ -22,10 +23,12 @@ const addTwoNumbers = (l1: ListNode | null, l2: ListNode | null): ListNode | nul
   let num2 = 0;
 
   while (l1 !== null || l2 !== null) {
-    num1 = l1 !== null ? l1.val : 0;
+    // @ts-ignore
+    num1 = l1 !== null ? l1.val : Num.zero;
+    // @ts-ignore
     num2 = l2 !== null ? l2.val : 0;
-    currSum = (num1 + num2 + carryNum) % 10;
-    carryNum = Math.floor((num1 + num2 + carryNum) / 10);
+    currSum = (num1 + num2 + carryNum) % Num.ten;
+    carryNum = Math.floor((num1 + num2 + carryNum) / Num.ten);
     next.next = new ListNode(currSum);
     next = next.next;
     l1 = l1 !== null ? l1.next : null;

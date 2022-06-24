@@ -1,12 +1,12 @@
 /**
  * Created by Zero on 2020/3/24 20:15.
  */
-interface Temp {
+interface ITemp {
   [key: number]: number;
 }
 
 const twoSum = (nums: number[], target: number) => {
-  const temp: Temp = {};
+  const temp: ITemp = {};
   for (let i = 0; i < nums.length; i++) {
     const tag = target - nums[i];
     if (temp[tag] >= 0) {
