@@ -10,6 +10,7 @@
     "commit": "git add . && git-cz",
     "build": "rm -rf ./dist && tsc",
     "precommit": "lint-staged",
+    "prepare": "husky install",
     "execute": "ts-node"
   },
   "repository": {
