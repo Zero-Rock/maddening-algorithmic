@@ -59,7 +59,6 @@ class LinkedList {
     return undefined;
   }
 
-  // 算法数据结构 maddening algorithmic 令人抓狂的
   indexOf<T>(element: T, equal: (a: T, b: T) => boolean) {
     const equalsFn = equal || ((a: T, b: T) => a === b);
     let current = this.head; // {1}
