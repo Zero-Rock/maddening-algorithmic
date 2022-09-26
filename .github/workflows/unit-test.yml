@@ -1,0 +1,36 @@
+name: UnitTest
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "master" ]
+
+jobs:
+  unitTest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PULL CODE
+        uses: actions/checkout@v2
+
+      - name: SETUP NODE
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: SETUP PNPM
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 7.12.2
+
+      - name: INSTALL DEPENDENCIES
+        run: |
+          pnpm install
+
+      - name: RUN TESTS
+        run: |
+          pnpm run coverage
+
+      - name: SETUP CODECOV
+        run: curl -s https://codecov.io/bash | bash

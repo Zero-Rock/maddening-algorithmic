@@ -11,7 +11,9 @@
     "build": "rm -rf ./dist && tsc",
     "precommit": "lint-staged",
     "prepare": "husky install",
-    "execute": "ts-node"
+    "execute": "ts-node",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",
@@ -31,12 +33,14 @@
     "typescript": "^4.8.3"
   },
   "devDependencies": {
+    "@vitest/coverage-istanbul": "^0.23.4",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1",
     "prettier": "^2.6.2",
     "ts-lint": "^4.5.1",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "vitest": "^0.23.4"
   }
 }
