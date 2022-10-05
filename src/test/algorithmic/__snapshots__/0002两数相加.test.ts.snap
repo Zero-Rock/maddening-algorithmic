@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`两数相加 > should be worked well 1`] = `
+ListNode {
+  "next": ListNode {
+    "next": ListNode {
+      "next": null,
+      "val": 2,
+    },
+    "val": 2,
+  },
+  "val": 2,
+}
+`;

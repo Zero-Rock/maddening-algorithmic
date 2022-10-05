@@ -4,7 +4,7 @@
  */
 import { Num } from './common/enum';
 
-class ListNode {
+export class ListNode {
   public val: number | null;
   public next: ListNode | null;
 
@@ -14,7 +14,7 @@ class ListNode {
   }
 }
 
-const addTwoNumbers = (l1: ListNode | null, l2: ListNode | null): ListNode | null => {
+export const addTwoNumbers = (l1: ListNode | null, l2: ListNode | null): ListNode | null => {
   const result = new ListNode(null);
   let next = result;
   let carryNum = 0;
