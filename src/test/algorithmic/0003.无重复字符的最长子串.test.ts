@@ -1,5 +1,5 @@
 import { lengthOfLongestSubstring } from 'src/algorithmic/0003.无重复字符的最长子串';
-import { expect, test, describe, it } from 'vitest';
+import { expect, describe, it } from 'vitest';
 
 describe('无重复字符的最长子串', () => {
   const cases = [
