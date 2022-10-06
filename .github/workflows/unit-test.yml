@@ -1,8 +1,8 @@
-name: UnitTest
+name: "UnitTest"
 
 on:
   push:
-    branches
+    branches:
       - master
   pull_request:
     # The branches below must be a subset of the branches above
