@@ -1,8 +1,8 @@
 import { addTwoNumbers, ListNode } from 'src/algorithmic/0002.两数相加';
 import { expect, test, describe } from 'vitest';
 
-const l11 = new ListNode(1, null);
-const l12 = new ListNode(1, l11);
+const l11 = new ListNode(6, null);
+const l12 = new ListNode(5, l11);
 const l13 = new ListNode(1, l12);
 
 describe('两数相加', () => {

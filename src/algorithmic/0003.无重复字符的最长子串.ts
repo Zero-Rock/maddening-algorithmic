@@ -7,7 +7,7 @@ interface IResult {
   str: string;
 }
 
-const lengthOfLongestSubstring = (str: string): number => {
+export const lengthOfLongestSubstring = (str: string): number => {
   const arr: string[] = [];
   const result: IResult = {
     len: 0,
@@ -27,6 +27,3 @@ const lengthOfLongestSubstring = (str: string): number => {
   }
   return result.len;
 };
-
-const len: number = lengthOfLongestSubstring('powwow');
-console.log(len);
