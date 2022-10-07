@@ -3,6 +3,7 @@
  * @see https://leetcode-cn.com/problems/fraction-to-recurring-decimal/
  */
 type Walk = (map: Map<number, number>, remainder: number, remainders: (number | string)[], denominator: number) => any;
+import { Num } from './common/enum';
 
 // tslint:disable-next-line:no-shadowed-variable
 const walk: Walk = (map, remainder, remainders, denominator) => {
@@ -16,8 +17,7 @@ const walk: Walk = (map, remainder, remainders, denominator) => {
     return remainders;
   } else {
     map.set(remainder, remainders.length);
-    // tslint:disable-next-line:no-magic-numbers
-    remainder *= 10;
+    remainder *= Num.ten;
     num = Math.floor(remainder / denominator);
     remainder %= denominator;
     remainders.push(num);
@@ -26,7 +26,7 @@ const walk: Walk = (map, remainder, remainders, denominator) => {
 };
 
 // tslint:disable-next-line:no-shadowed-variable
-const fractionToDecimal = (numerator: number, denominator: number): string => {
+export const fractionToDecimal = (numerator: number, denominator: number): string => {
   // 判断边界denominator
   if (denominator === 0) {
     return '';
