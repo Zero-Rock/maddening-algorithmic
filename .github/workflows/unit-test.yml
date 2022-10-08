@@ -10,12 +10,26 @@ on:
       - master
 
 jobs:
-  unitTest:
+  preCheck:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Filter path
+        uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            srcPath:
+            - 'src/**'
+    outputs:
+      isExecute: ${{ steps.filter.outputs.srcPath }}
+  unitTest:
+    needs: preCheck
+    if: ${{ needs.preCheck.outputs.isExecute == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Commit records
         run: |
           echo "THE LAST COMMIT RECORDS"
