@@ -1,8 +1,8 @@
 /**
  * Created by Zero<mobius_pan@yeah.net> on 2020/7/10 8:44 下午.
- * @see https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/
+ * @see https://leetcode.cn/problems/intersection-of-two-arrays-ii/
  */
-const intersect = (nums1: number[], nums2: number[]) => {
+export const intersect = (nums1: number[], nums2: number[]) => {
   const list2map = (list: number[]) => {
     const map: Map<number, number> = new Map();
     list.forEach((num: number) => {

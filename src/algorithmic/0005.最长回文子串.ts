@@ -1,6 +1,6 @@
 /**
  * Created by Zero on 2020/3/24 22:53.
- * @see https://leetcode-cn.com/problems/longest-palindromic-substring
+ * @see https://leetcode.cn/problems/longest-palindromic-substring
  */
 const longestPalindrome = (str: string): string => {
   const strLen: number = str.length;

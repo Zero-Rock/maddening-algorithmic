@@ -1,6 +1,6 @@
 /**
  * Created by Zero on 2020/3/24 20:28.
- * @see https://leetcode-cn.com/problems/fraction-to-recurring-decimal/
+ * @see https://leetcode.cn/problems/fraction-to-recurring-decimal/
  */
 type Walk = (map: Map<number, number>, remainder: number, remainders: (number | string)[], denominator: number) => any;
 import { Num } from './common/enum';

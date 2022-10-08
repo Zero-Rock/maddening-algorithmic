@@ -1,6 +1,6 @@
 /**
  * Created by Zero on 2020/3/24 21:24.
- * @see https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
+ * @see https://leetcode.cn/problems/longest-substring-without-repeating-characters/
  */
 interface IResult {
   len: number;

@@ -1,6 +1,6 @@
 /**
  * Created by Zero on 2020/3/24 22:29.
- * @see https://leetcode-cn.com/problems/median-of-two-sorted-arrays/
+ * @see https://leetcode.cn/problems/median-of-two-sorted-arrays/
  */
 const findMedianSortedArrays = (nums1: number[], nums2: number[]): number => {
   const len1: number = nums1.length;

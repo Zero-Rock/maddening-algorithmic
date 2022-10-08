@@ -1,6 +1,6 @@
 /**
  * Created by Zero<mobius_pan@yeah.net> on 2020/10/24 3:30 下午.
- * @see https://leetcode-cn.com/problems/reverse-integer/
+ * @see https://leetcode.cn/problems/reverse-integer/
  */
 import { Num } from './common/enum';
 

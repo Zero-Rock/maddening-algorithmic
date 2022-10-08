@@ -5,6 +5,8 @@ export default defineConfig({
   test: {
     include: ['**/*.{test,spec}.{ts,js}'],
     reporters: ['verbose'],
+    maxThreads: 1,
+    minThreads: 1,
     coverage: {
       provider: 'istanbul',
       include: ['src/**/*.ts'],

@@ -1,6 +1,6 @@
 /**
  * Created by Zero on 2020/3/24 22:22.
- * @see https://leetcode-cn.com/problems/plus-one/
+ * @see https://leetcode.cn/problems/plus-one/
  */
 import { Num } from './common/enum';
 

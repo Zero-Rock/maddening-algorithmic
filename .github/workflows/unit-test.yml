@@ -13,26 +13,27 @@ jobs:
   unitTest:
     runs-on: ubuntu-latest
     steps:
-      - name: PULL CODE
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: SETUP NODE
+      - name: Setup node
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
 
-      - name: SETUP PNPM
+      - name: Setup pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
           version: 7.12.2
 
-      - name: INSTALL DEPENDENCIES
+      - name: Install dependencies
         run: |
           pnpm install
 
-      - name: RUN TESTS
+      - name: Run tests
         run: |
           pnpm run coverage
+          ls -al coverage
 
-      - name: SETUP CODECOV
+      - name: Upload coverage to  codecov
         run: curl -s https://codecov.io/bash | bash

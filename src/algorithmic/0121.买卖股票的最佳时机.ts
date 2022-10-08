@@ -1,6 +1,6 @@
 /**
  * Created by Zero on 2020/3/24 21:32.
- * @see https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
+ * @see https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/
  */
 export const maxProfit = (prices: number[]): number => {
   let MIN: number = Number.MAX_SAFE_INTEGER;
