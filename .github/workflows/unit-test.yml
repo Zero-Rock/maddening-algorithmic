@@ -30,6 +30,9 @@ jobs:
     if: ${{ needs.preCheck.outputs.isExecute == 'true' }}
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Commit records
         run: |
           echo "THE LAST COMMIT RECORDS"
