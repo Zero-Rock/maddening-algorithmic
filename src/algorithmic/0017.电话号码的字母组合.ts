@@ -8,7 +8,7 @@ interface IStrMap {
   [key: number]: string[];
 }
 
-const letterCombinations = (digits: string): string[] => {
+export const letterCombinations = (digits: string): string[] => {
   const str = String(digits);
   const strMap: IStrMap = {
     2: ['a', 'b', 'c'],
