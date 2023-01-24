@@ -1,5 +1,6 @@
+// tslint:disable:no-magic-numbers
 import { twoSum } from 'src/algorithmic/0001.两数之和';
-import { expect, test, describe } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
 describe('两数之和', () => {
   const cases = [
