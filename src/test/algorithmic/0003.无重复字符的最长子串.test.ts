@@ -8,7 +8,7 @@ describe('无重复字符的最长子串', () => {
     ['world', 5],
     ['ab ab', 3],
   ];
-  it.each(cases)('lengthOfLongestSubstring("%s") should be %i', (params, expected) => {
+  it.each(cases)('lengthOfLongestSubstring("%s") should return %i', (params, expected) => {
     expect(lengthOfLongestSubstring(params as string)).toBe(expected);
   });
 });

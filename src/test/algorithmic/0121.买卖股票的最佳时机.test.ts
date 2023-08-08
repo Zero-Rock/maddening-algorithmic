@@ -7,7 +7,7 @@ describe('买卖股票的最佳时机', () => {
     [[7, 1, 5, 3, 6, 4], 5],
     [[7, 6, 4, 3, 1], 0],
   ];
-  it.each(cases)('maxProfit(%s) should be %i', (params, expected) => {
+  it.each(cases)('maxProfit(%s) should return %i', (params, expected) => {
     expect(maxProfit(params as number[])).toBe(expected);
   });
 });

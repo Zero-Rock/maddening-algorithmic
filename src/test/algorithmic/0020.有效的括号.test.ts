@@ -7,7 +7,7 @@ describe('有效的括号', () => {
     ['()[]{}', true],
     ['()[({})(]{}', false],
   ];
-  it.each(cases)('isValid(%s) should be %s', (params, expected) => {
+  it.each(cases)('isValid(%s) should return %s', (params, expected) => {
     expect(isValid(params as unknown as string)).toBe(expected);
   });
 });

@@ -9,7 +9,7 @@ describe('两数相除', () => {
     [100, 3, 33],
     [2, 1, 2],
   ];
-  it.each(cases)('divide(%s, %s) should be %s', (dividend: number, divisor: number, expected) => {
+  it.each(cases)('divide(%s, %s) should return %s', (dividend: number, divisor: number, expected) => {
     expect(divide(dividend as unknown as number, divisor)).toBe(expected);
   });
 });

@@ -17,7 +17,7 @@ describe('两个数组的交集', () => {
     ],
     [[1, 2, 3], [4, 5, 6], []],
   ];
-  it.each(cases)('intersect(%s, %s) should be %s', (params1, params2, expected) => {
+  it.each(cases)('intersect(%s, %s) should return %s', (params1, params2, expected) => {
     expect(intersect(params1, params2)).toStrictEqual(expected);
   });
 });

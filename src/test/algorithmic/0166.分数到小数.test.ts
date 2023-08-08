@@ -12,7 +12,7 @@ describe('分数到小数', () => {
     [0, 1, '0'],
     [1, 0, ''],
   ];
-  it.each(cases)('fractionToDecimal(%s, %s) should be "%s"', (numerator, denominator, expected) => {
+  it.each(cases)('fractionToDecimal(%s, %s) should return "%s"', (numerator, denominator, expected) => {
     expect(fractionToDecimal(numerator as number, denominator as number)).toBe(expected);
   });
 });

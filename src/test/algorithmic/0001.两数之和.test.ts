@@ -8,7 +8,7 @@ describe('两数之和', () => {
     [[1, 1, 1, 1, 1], 3, undefined],
     [[1, 2, 3, 4, 5], 0, undefined],
   ];
-  test.each(cases)('twoSum(%s, %i) should be %s', (params1, params2, expected) => {
+  test.each(cases)('twoSum(%s, %i) should return %s', (params1, params2, expected) => {
     expect(twoSum(params1 as number[], params2 as number)).toStrictEqual(expected);
   });
 });

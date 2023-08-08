@@ -11,7 +11,7 @@ describe('电话号码的字母组合', () => {
     ['91', ['w', 'x', 'y', 'z']],
     ['912', ['wa', 'wb', 'wc', 'xa', 'xb', 'xc', 'ya', 'yb', 'yc', 'za', 'zb', 'zc']],
   ];
-  it.each(cases)('letterCombinations(%s) should be %s', (params, expected) => {
+  it.each(cases)('letterCombinations(%s) should return %s', (params, expected) => {
     expect(letterCombinations(params as string)).toStrictEqual(expected);
   });
 });
