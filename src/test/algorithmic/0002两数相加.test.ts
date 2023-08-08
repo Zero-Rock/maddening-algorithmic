@@ -1,5 +1,6 @@
+// tslint:disable:no-magic-numbers
 import { addTwoNumbers, ListNode } from 'src/algorithmic/0002.两数相加';
-import { expect, test, describe } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
 const l11 = new ListNode(6, null);
 const l12 = new ListNode(5, l11);

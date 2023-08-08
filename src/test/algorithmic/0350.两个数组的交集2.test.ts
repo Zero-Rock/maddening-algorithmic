@@ -1,5 +1,6 @@
+// tslint:disable:no-magic-numbers
 import { intersect } from 'src/algorithmic/0350.两个数组的交集2';
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 describe('两个数组的交集', () => {
   const cases: number[][][] = [

@@ -1,5 +1,6 @@
+// tslint:disable:no-magic-numbers
 import { fractionToDecimal } from 'src/algorithmic/0166.分数到小数';
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 describe('分数到小数', () => {
   const cases = [

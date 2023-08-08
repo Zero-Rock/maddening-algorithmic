@@ -1,5 +1,5 @@
 import { letterCombinations } from 'src/algorithmic/0017.电话号码的字母组合';
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 describe('电话号码的字母组合', () => {
   const cases = [

@@ -1,5 +1,6 @@
+// tslint:disable:no-magic-numbers
 import { maxProfit } from 'src/algorithmic/0121.买卖股票的最佳时机';
-import { expect, describe, it } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 describe('买卖股票的最佳时机', () => {
   const cases = [
