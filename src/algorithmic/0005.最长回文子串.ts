@@ -2,7 +2,7 @@
  * Created by Zero on 2020/3/24 22:53.
  * @see https://leetcode.cn/problems/longest-palindromic-substring
  */
-const longestPalindrome = (str: string): string => {
+export const longestPalindrome = (str: string): string => {
   const strLen: number = str.length;
   let res: string = '';
   const map: (number | boolean)[][] = Array.from(new Array(strLen), () => new Array(strLen).fill(0));
@@ -16,5 +16,3 @@ const longestPalindrome = (str: string): string => {
   }
   return res;
 };
-
-console.log(longestPalindrome('aasdfghahg'));
