@@ -1,6 +1,6 @@
 class Nodes<T = any> {
-  element: T;
-  next?: Nodes;
+  public element: T;
+  public next?: Nodes;
 
   constructor(element: T) {
     this.element = element;
@@ -8,6 +8,7 @@ class Nodes<T = any> {
   }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class LinkedList {
   private count: number;
   private head?: Nodes;
@@ -17,7 +18,7 @@ class LinkedList {
     this.head = undefined;
   }
 
-  push<T>(element: T) {
+  public push<T>(element: T) {
     const node = new Nodes<T>(element);
     let current;
     if (this.head == null) {
@@ -32,7 +33,7 @@ class LinkedList {
     this.count++;
   }
 
-  getElementAt(index: number) {
+  public getElementAt(index: number) {
     if (index >= 0 && index <= this.count) {
       let node = this.head;
       for (let i = 0; i < index && node != null; i++) {
@@ -43,7 +44,7 @@ class LinkedList {
     return null;
   }
 
-  removeAt(index: number) {
+  public removeAt(index: number) {
     if (index >= 0 && index < this.count) {
       const current = this.head!;
       // 移除第一项
@@ -59,7 +60,7 @@ class LinkedList {
     return undefined;
   }
 
-  indexOf<T>(element: T, equal: (a: T, b: T) => boolean) {
+  public indexOf<T>(element: T, equal: (a: T, b: T) => boolean) {
     const equalsFn = equal || ((a: T, b: T) => a === b);
     let current = this.head; // {1}
     for (let i = 0; i < this.count && current != null; i++) {

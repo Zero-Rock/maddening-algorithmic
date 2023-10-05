@@ -2,7 +2,7 @@
  * Created by Zero on 2020/3/24 22:42.
  * @see https://leetcode.cn/problems/container-with-most-water
  */
-const maxArea = (height: number[]): number => {
+export const maxArea = (height: number[]): number => {
   let max: number = 0;
   let i: number = 0;
   let j: number = height.length - 1;

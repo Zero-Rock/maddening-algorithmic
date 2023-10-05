@@ -4,7 +4,7 @@
  */
 import { Num } from './common/enum';
 
-const reverse = (num: number): number => {
+export const reverse = (num: number): number => {
   let result = 0;
   let temp = num;
   while (temp !== 0) {
