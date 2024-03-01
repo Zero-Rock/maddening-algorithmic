@@ -4,7 +4,7 @@
  */
 import { Num } from './common/enum';
 
-const isValidSudoku = (board: string[][]): boolean => {
+export const isValidSudoku = (board: string[][]): boolean => {
   const row: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   const col: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0];
   const square: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0];
