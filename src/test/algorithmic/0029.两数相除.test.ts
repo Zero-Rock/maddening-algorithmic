@@ -4,7 +4,7 @@
 import { divide } from 'src/algorithmic/0029.两数相除';
 import { describe, expect, it } from 'vitest';
 
-describe('两数相除', () => {
+describe('0029.两数相除', () => {
   const cases: [number, number, number][] = [
     [100, 3, 33],
     [2, 1, 2],

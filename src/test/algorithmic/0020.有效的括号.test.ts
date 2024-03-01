@@ -1,7 +1,7 @@
 import { isValid } from 'src/algorithmic/0020.有效的括号';
 import { describe, expect, it } from 'vitest';
 
-describe('有效的括号', () => {
+describe('0020.有效的括号', () => {
   const cases: [string, boolean][] = [
     ['()', true],
     ['()[]{}', true],

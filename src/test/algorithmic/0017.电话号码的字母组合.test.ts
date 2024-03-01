@@ -1,7 +1,7 @@
 import { letterCombinations } from 'src/algorithmic/0017.电话号码的字母组合';
 import { describe, expect, it } from 'vitest';
 
-describe('电话号码的字母组合', () => {
+describe('0017.电话号码的字母组合', () => {
   const cases: [string, string[]][] = [
     ['23', ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']],
     ['12', ['a', 'b', 'c']],

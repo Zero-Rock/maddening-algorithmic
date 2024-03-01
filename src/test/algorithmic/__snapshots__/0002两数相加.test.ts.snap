@@ -1,5 +1,21 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`0002.两数相加 > should be worked well 1`] = `
+ListNode {
+  "next": ListNode {
+    "next": ListNode {
+      "next": ListNode {
+        "next": null,
+        "val": 1,
+      },
+      "val": 3,
+    },
+    "val": 0,
+  },
+  "val": 2,
+}
+`;
+
 exports[`两数相加 > should be worked well 1`] = `
 ListNode {
   "next": ListNode {

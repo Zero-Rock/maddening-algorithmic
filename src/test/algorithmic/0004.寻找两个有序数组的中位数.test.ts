@@ -2,7 +2,7 @@
 import { findMedianSortedArrays } from 'src/algorithmic/0004.寻找两个有序数组的中位数';
 import { describe, expect, it } from 'vitest';
 
-describe('寻找两个正序数组的中位数', () => {
+describe('0004.寻找两个正序数组的中位数', () => {
   const cases: [number[], number[], number][] = [
     [[1, 3], [2], 2],
     [[1, 3], [2, 4], 2.5],

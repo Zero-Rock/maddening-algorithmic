@@ -4,7 +4,7 @@
 import { reverse } from 'src/algorithmic/0007.整数反转';
 import { describe, expect, it } from 'vitest';
 
-describe('整数反转', () => {
+describe('0007.整数反转', () => {
   const cases = [
     [123, 321],
     [210, 12],

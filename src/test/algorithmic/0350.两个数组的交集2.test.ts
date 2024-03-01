@@ -2,7 +2,7 @@
 import { intersect } from 'src/algorithmic/0350.两个数组的交集2';
 import { describe, expect, it } from 'vitest';
 
-describe('两个数组的交集', () => {
+describe('0350.两个数组的交集', () => {
   const cases: number[][][] = [
     [
       [1, 2, 2, 1],

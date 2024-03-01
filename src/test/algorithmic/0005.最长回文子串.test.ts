@@ -1,7 +1,7 @@
 import { longestPalindrome } from 'src/algorithmic/0005.最长回文子串';
 import { describe, expect, it } from 'vitest';
 
-describe('最长回文子串', () => {
+describe('0005.最长回文子串', () => {
   const cases = [
     ['abcba', 'abcba'],
     ['world', 'd'],

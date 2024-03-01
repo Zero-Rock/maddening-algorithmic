@@ -2,7 +2,7 @@
 import { maxProfit } from 'src/algorithmic/0121.买卖股票的最佳时机';
 import { describe, expect, it } from 'vitest';
 
-describe('买卖股票的最佳时机', () => {
+describe('0121.买卖股票的最佳时机', () => {
   const cases: [number[], number][] = [
     [[7, 1, 5, 3, 6, 4], 5],
     [[7, 6, 4, 3, 1], 0],
