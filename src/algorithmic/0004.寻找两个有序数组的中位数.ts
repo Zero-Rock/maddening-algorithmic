@@ -8,10 +8,10 @@ export const findMedianSortedArrays = (nums1: number[], nums2: number[]): number
   const nums = [...nums1, ...nums2].sort((a: number, b: number) => a - b);
   const len = len1 + len2;
   if (!(len % 2)) {
-    const harf = len / 2;
-    return (nums[harf - 1] + nums[harf]) / 2;
+    const half = len / 2;
+    return (nums[half - 1] + nums[half]) / 2;
   } else {
-    const harf = (len - 1) / 2;
-    return nums[harf];
+    const half = (len - 1) / 2;
+    return nums[half];
   }
 };
