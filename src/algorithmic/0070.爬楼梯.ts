@@ -3,7 +3,7 @@
  *
  * [70] 爬楼梯
  */
-const climbStairs = (n: number): number => {
+export const climbStairs = (n: number): number => {
   if (n <= 2) {
     return n;
   }
@@ -12,8 +12,7 @@ const climbStairs = (n: number): number => {
   // n-1 层的走法
   let b = 2;
   for (let i = 3; i <= n; i++) {
-    a = b;
-    b = a + b;
+    [a, b] = [b, a + b];
   }
   return b;
 };
