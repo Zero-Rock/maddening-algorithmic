@@ -19,6 +19,15 @@ export const climbStairs = (n: number): number => {
 
 //
 
+/**
+ * Calculates the number of distinct ways to climb a staircase with `n` steps,
+ * where at each step you can climb either 1 or 2 steps.
+ * Uses memoization to optimize recursive calls.
+ *
+ * @param n - The total number of steps in the staircase.
+ * @param memo - An optional Map used for memoization to cache computed results.
+ * @returns The number of distinct ways to climb to the top.
+ */
 export const climbStairs2 = (n: number, memo = new Map()): number => {
   if (n <= 2) {
     return n;
