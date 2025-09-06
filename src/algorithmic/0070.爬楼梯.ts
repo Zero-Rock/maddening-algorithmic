@@ -16,3 +16,17 @@ export const climbStairs = (n: number): number => {
   }
   return b;
 };
+
+//
+
+export const climbStairs2 = (n: number, memo = new Map()): number => {
+  if (n <= 2) {
+    return n;
+  }
+  if (memo.has(n)) {
+    return memo.get(n)!;
+  }
+  const result = climbStairs2(n - 1, memo) + climbStairs2(n - 2, memo);
+  memo.set(n, result);
+  return result;
+};
