@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Filter path
         uses: dorny/paths-filter@v2
@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Commit records
         run: |
@@ -39,14 +39,15 @@ jobs:
           git log --pretty=format:'%Cgreen%h %Creset| %Cblueauthor: %Cred%<(15,trunc)%an %Creset| %Cbluecommitter: %Cred%<(15,trunc)%cn %Creset| %Cbluedate: %Cred%ad %Creset| %Cbluemessage: %Cred%<(60,trunc)%s' --date=format:'%Y-%m-%d %H:%M:%S' -1
 
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
+          node-version: 20
+          cache: 'pnpm'
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v4
         with:
-          version: 9.14.4
+          version: 10
 
       - name: Install dependencies
         run: |
